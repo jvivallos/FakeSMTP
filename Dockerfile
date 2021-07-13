@@ -8,6 +8,6 @@ RUN unzip /fakeSMTP-latest.zip
 
 VOLUME /output
 
-EXPOSE 25
+EXPOSE 2525
 
-ENTRYPOINT ["java","-jar","/fakeSMTP-2.0.jar","--background", "--output-dir", "/output", "--port", "25", "--start-server"]
+ENTRYPOINT ["java","-jar","/fakeSMTP-2.0.jar","--background", "--output-dir", "/output", "--port", "2525", "--start-server"]
